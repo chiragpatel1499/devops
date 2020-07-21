@@ -1,1 +1,1 @@
-print("jenkins workspace")
+print("jenkins for workspace")
