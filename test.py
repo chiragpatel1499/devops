@@ -1,1 +1,1 @@
-print("new commit for jenkins workspace")
+print("jenkins workspace")
