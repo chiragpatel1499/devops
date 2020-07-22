@@ -5,20 +5,16 @@ app = Flask(__name__)
 
 # list of cat images
 images = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
+    "https://photos.app.goo.gl/fJg2N4SV8ysUNgf8A",
+    "https://photos.app.goo.gl/zPRDcNr2Et4sFkXh9",
+    "https://photos.app.goo.gl/RuV5YYWzaymVqRfZ6",
+    "https://photos.app.goo.gl/Mvjo6bd6mpqoSHV47"
 ]
 
 @app.route('/')
 def index():
     url = random.choice(images)
-    print("Hello url : ")
-    print(url)
+    return render_template('index.html', url=url)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
