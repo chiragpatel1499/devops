@@ -17,8 +17,8 @@ images = [
 @app.route('/')
 def index():
     url = random.choice(images)
-    printf("Hello url : ")
-    printf(url)
+    print("Hello url : ")
+    print(url)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
